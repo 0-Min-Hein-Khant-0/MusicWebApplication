@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- APlayer CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpre02.deviantart.net%2Fbc1a%2Fth%2Fpre%2Ff%2F2015%2F245%2Fc%2F9%2Fapple_music_logo_by_mattroxzworld-d982zrj.png&f=1&nofb=1">
+
+    <title>Min Hein Khant Music Store</title>
+    <style>
+    	body{
+    		background-color: #f7f7f7;
+    		font-family: Open sans;
+    	}
+    	img{
+    		width: 100%;
+    		min-height: 250px;
+    	}
+    	.main{
+    		padding: 40px 0;
+    	}
+    	.col-md-3{
+    		margin-bottom: 40px;
+    	}
+    	.album-poster{
+    		position: relative;
+    		display: block;
+    		border-radius: 7px;
+    		overflow: hidden;
+    		box-shadow: 0 15px 35px #3d2173a1;
+    		transition: all ease 0.4s;
+    	}
+    	.album-poster:hover{
+    		box-shadow: none;
+    		transform: scale(0.98) translateY(5px);
+    	}
+    	h3{
+    		font-size: 34px;
+    		margin-bottom: 34px;
+    		border-bottom: 4px solid #e6e6e6;
+    		padding-bottom: 15px;
+    	}
+    	p{
+    		font-size: 15px;
+    	}
+    	h4{
+    		font-size: 16px;
+    		text-transform: uppercase;
+    		margin-top: 15px;
+    		font-weight: 700;
+    	}
+
+
+		/*default is hide music player*/
+		#aplayer{
+			position: fixed;
+			bottom: -100%;
+			left: 0;
+			width: 100%;
+			margin: 0;
+			box-shadow: 0 -2px 2px #dadada;
+			background-color: #fff;
+			transition: all ease 0.5s;
+		}
+		#aplayer.showPlayer{
+			bottom: 0;
+		}
+
+
+		/*MUSIC PLAYER CUSTOMIZING STYLE*/
+		span{
+			color: #000 !important;
+			font-size: 16px;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
+			background: #e0e0e0;
+    		height: 4px;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{
+			height: 4px;
+			background-color: #2196F3 !important;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
+			background-color: #2196F3 !important;
+		}
+
+		.aplayer .aplayer-icon{
+			width: 20px;
+			height: 20px;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+		    fill: #000;
+		}
+		.aplayer .aplayer-info .aplayer-music{
+			margin-bottom: 5px;
+		}
+		.header .logo a
+		{
+		  display: inline-block;
+		  text-align: center;
+		  line-height: 36px;
+		  height: 40px;
+		  width: 40px;
+		  font-size: 24px;
+		  color:  #fb839e;
+		  border-radius: 50%;
+		  border:2px solid  #fb839e;;
+		  font-weight: 600;
+		  text-transform: uppercase;
+		  text-decoration: none;
+}
+
+
+    </style>
+ 	</head>
+	<body>
+
+<div class="main">
+	<header class="header">
+		<div class="container">
+
+						<div class="row justify-content-between">
+
+							<div class="logo">
+
+								<a href="#home">M</a>
+
+								<a href="#home">H</a>
+
+								<a href="#home">K</a>
+
+							</div>
+
+							<div class="hamburger-btn outer-shadow hover-in-shadow">
+
+								<span></span>
+
+							</div>
+
+						</div>
+
+					</div>
+	</header>
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="text-center text-info">Music Store</h3>
+			</div>
+			<div class="col-md-3">
+				<a href="javascript:void();" class="album-poster" data-switch="0">
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy50Y5IT3WBE%2Fmaxresdefault.jpg&f=1&nofb=1" alt="">
+				</a>
+				<h4>DEAMN - Sign (Lyric)</h4>
+				<p>Artist: 'DEAMN'</p>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="1">
+					<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0013%2F2802%2F1548%2Fproducts%2FJustin_Bieber_-_Intentions_1200x1200.png%3Fv%3D1582100090&f=1&nofb=1" alt="">
+				</a>
+				<h4>Intentions (Lyrics)</h4>
+				<p>Artist: 'Justin Bieber'</p>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="2">
+					<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FzUrtRTT9X-U%2Fmaxresdefault.jpg&f=1&nofb=1" alt="">
+				</a>
+				<h4>Lily(Lyrics)</h4>
+				<p>Artist: 'Alan Walker, Emelie Hollow'</p>
+			</div>
+
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="3">
+					<img src="https://st.depositphotos.com/1787196/1330/i/950/depositphotos_13301932-stock-photo-hairy-monster.jpg" alt="">
+				</a>
+				<h4>Monsters (Lyrics)</h4>
+				<p>Artist: 'Katie Sky'</p>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="4">
+					<img src="https://headlineplanet.com/home/wp-content/uploads/2020/03/Powfu-Beabadoobee-Death-Bed.jpg" alt="">
+				</a>
+				<h4>Death Bed</h4>
+				<p>Artist: 'Powfu & Beabadoobee'</p>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="5">
+					<img src="https://wallpapercave.com/wp/wp9396908.jpg" alt="">
+				</a>
+				<h4>Believer</h4>
+				<p>Artist: 'Imagine Dragon'</p>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="6">
+					<img src="https://i.scdn.co/image/ab67616d0000b2733e593aae08d3bac8d8ef7222" alt="">
+				</a>
+				<h4>Mood</h4>
+				<p>Artist: 'Dyson'</p>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="album-poster">
+					<img src="https://i.scdn.co/image/ab67616d0000b273dae11f8415e64d0fae5a5eab" alt="">
+				</a>
+				<h4>Dancin</h4>
+				<p>Artist: 'Aaron Smith'</p>
+			</div>
+
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3>coming soon</h3>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>Hallow</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/838702/pexels-photo-838702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>Repellat illo</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/894156/pexels-photo-894156.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>adipisicing elit</h4>
+			</div>
+
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>Atque ab</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/1735240/pexels-photo-1735240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>Fugiat Silly</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>veniam expedita</h4>
+			</div>
+		</div>
+		<div class="card my-5">
+  <div class="card-header">
+    <h2 class="text-center text-info">Developed By Min Hein Khant</h2>
+  </div>
+</div>
+
+
+
+	</div>
+</div>
+
+	<div id="aplayer"></div>
+
+	<!-- Jquery Link -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<!-- Bootstrap Link -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- APlayer Jquery link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+	<script>
+
+
+		// NOW I CLICK album-poster TO GET CURRENT SONG ID
+		$(".album-poster").on('click', function(e){
+			var dataSwitchId = $(this).attr('data-switch');
+			//console.log(dataSwitchId);
+
+			// and now i use aplayer switch function see
+			ap.list.switch(dataSwitchId); //this is static id but i use dynamic
+
+			// aplayer play function
+			// when i click any song to play
+			ap.play();
+
+			// click to slideUp player see
+			$("#aplayer").addClass('showPlayer');
+		});
+
+		const ap = new APlayer({
+		    container: document.getElementById('aplayer'),
+		    listFolded: true,
+		    audio: [
+		    {
+		        name: 'Sign',
+		        artist: 'DEAMN',
+		        url: 'source/DEAMN - Sign (Lyric).mp3',
+		        cover: 'https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+		    },
+			{
+		        name: 'Intention',  // SONG NAME
+		        artist: 'JustinBieber', //ARTIST NAME
+		        url: 'source/Justin Bieber - Intentions (Lyrics) ft. Quavo.mp3', // PATH NAME AND SONG URL
+		        cover: 'https://images.pexels.com/photos/838702/pexels-photo-838702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' // COVER IMAGE
+		    },
+			{
+				name: 'Lily',
+				artist: 'Unknown',
+				url: 'source/Alan Walker - Lily ft. K-391 .mp3',
+				cover: 'https://images.pexels.com/photos/838696/pexels-photo-838696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+			},
+			{
+				name: 'Monsters',
+				artist: 'Katie Sky',
+				url: 'source/Katie Sky - Monsters (Lyrics).mp3',
+				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+			},
+      {
+				name: 'Death Bed',
+				artist: 'Powfu & Beabadoobee',
+				url: 'source/Powfu  Death Bed Lyrics  dont stay away for too long.mp3',
+				cover: 'https://headlineplanet.com/home/wp-content/uploads/2020/03/Powfu-Beabadoobee-Death-Bed.jpg',
+			},
+      {
+				name: 'Believer',
+				artist: 'Imagine Dragon',
+				url: 'source/Imagine Dragons  Believer Lyrics.mp3',
+				cover: 'https://wallpapercave.com/wp/wp9396908.jpg',
+			},
+      {
+				name: 'Mood',
+				artist: 'Dyson',
+				url: 'source/24kGoldn  Mood Lyrics ft Iann Dior.mp3',
+				cover: 'https://i.scdn.co/image/ab67616d0000b2733e593aae08d3bac8d8ef7222',
+			},
+      {
+				name: 'Dancin',
+				artist: 'Aaron Smith',
+				url: 'source/dancin.mp3',
+				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+			},
+
+		    ]
+		});
+	</script>
+
+	</body>
+</html>
